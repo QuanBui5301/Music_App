@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".FindFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FEFFFF"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_marginStart="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="#454746"
+            android:background="@drawable/ic_baseline_keyboard_backspace_24"
+            />
+            <LinearLayout
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:layout_margin="10dp"
+                >
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:backgroundTint="#757575"
+                    android:background="@drawable/ic_baseline_search_24"
+                    />
+                <EditText
+                    android:id="@+id/find_txt"
+                    android:layout_marginStart="5dp"
+                    android:layout_width= "255dp"
+                    android:layout_height="match_parent"
+                    android:background="#EEEFF3"
+                    android:inputType="text"
+                    android:imeOptions="actionSearch"
+                    android:hint="Tìm kiếm bài hát, nghệ sĩ..."
+                    android:textSize="15dp"/>
+                <ImageButton
+                    android:id="@+id/close_btn"
+                    android:background="@drawable/ic_baseline_close_24"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="9dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:backgroundTint="#757575"/>
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp">
+        <androidx.fragment.app.FragmentContainerView
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:id="@+id/find_container"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navGraph="@navigation/find_nav" />
+    </LinearLayout>
+
+
+</LinearLayout>

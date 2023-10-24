@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/library" android:title="Thư viện" android:icon="@drawable/ic_baseline_library_music_24"/>
+    <item android:id="@+id/discovery" android:title="Khám phá" android:icon="@drawable/ic_baseline_adjust_24"/>
+    <item android:id="@+id/chart" android:title="#zingchart" android:icon="@drawable/ic_baseline_insights_24"/>
+    <item android:id="@+id/radio" android:title="Radio" android:icon="@drawable/ic_baseline_sensors_24"/>
+    <item android:id="@+id/user" android:title="Cá nhân" android:icon="@drawable/ic_baseline_account_circle_24"/>
+</menu>

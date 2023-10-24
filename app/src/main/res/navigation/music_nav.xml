@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/music_nav"
+    app:startDestination="@id/discovery">
+
+    <fragment
+        android:id="@+id/discovery"
+        android:name="com.example.musicapp.Discovery"
+        android:label="fragment_discovery"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/chart"
+        android:name="com.example.musicapp.Chart"
+        android:label="fragment_chart"
+        tools:layout="@layout/fragment_chart" />
+    <fragment
+        android:id="@+id/radio"
+        android:name="com.example.musicapp.Radio"
+        android:label="fragment_radio"
+        tools:layout="@layout/fragment_radio" />
+    <fragment
+        android:id="@+id/library"
+        android:name="com.example.musicapp.Library"
+        android:label="fragment_library"
+        tools:layout="@layout/fragment_library" />
+    <fragment
+        android:id="@+id/user"
+        android:name="com.example.musicapp.User"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/findFragment"
+        android:name="com.example.musicapp.FindFragment"
+        android:label="fragment_find"
+        tools:layout="@layout/fragment_find" />
+
+</navigation>
